@@ -19,6 +19,7 @@
 		86E313181AFEA883008F0120 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E313171AFEA883008F0120 /* SettingsViewController.swift */; };
 		86E3131A1AFEB3A5008F0120 /* SiginViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E313191AFEB3A5008F0120 /* SiginViewController2.swift */; };
 		86E3131C1AFEB64A008F0120 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3131B1AFEB64A008F0120 /* PhotosViewController.swift */; };
+		86E3131E1B0051CE008F0120 /* FavoriteSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3131D1B0051CE008F0120 /* FavoriteSwipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		86E313171AFEA883008F0120 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		86E313191AFEB3A5008F0120 /* SiginViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiginViewController2.swift; sourceTree = "<group>"; };
 		86E3131B1AFEB64A008F0120 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		86E3131D1B0051CE008F0120 /* FavoriteSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteSwipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				86E313191AFEB3A5008F0120 /* SiginViewController2.swift */,
 				86E313171AFEA883008F0120 /* SettingsViewController.swift */,
 				86E3131B1AFEB64A008F0120 /* PhotosViewController.swift */,
+				86E3131D1B0051CE008F0120 /* FavoriteSwipeViewController.swift */,
 			);
 			path = "dropbox-demo";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				860D05731AF9BC5700C106B2 /* CreateAccountViewController.swift in Sources */,
 				860D05711AF9BBA600C106B2 /* SignInRootViewController.swift in Sources */,
 				86E313181AFEA883008F0120 /* SettingsViewController.swift in Sources */,
+				86E3131E1B0051CE008F0120 /* FavoriteSwipeViewController.swift in Sources */,
 				860D05751AF9BC7900C106B2 /* SignInViewController.swift in Sources */,
 				860D056F1AF9BB8C00C106B2 /* CreateAccountRootViewController.swift in Sources */,
 				860D05511AF98D8500C106B2 /* ViewController.swift in Sources */,

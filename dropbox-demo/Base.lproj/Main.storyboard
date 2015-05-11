@@ -320,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="2170" y="2500"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite Swipe View Controller-->
         <scene sceneID="heM-Md-LdR">
             <objects>
-                <viewController id="syk-w3-5Uu" sceneMemberID="viewController">
+                <viewController id="syk-w3-5Uu" customClass="FavoriteSwipeViewController" customModule="dropbox_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XkX-it-UMV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,8 +333,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Gra-F9-RLS" appends="YES" id="Zpb-jR-dY1"/>
-                                    <outletCollection property="gestureRecognizers" destination="FbC-uv-mpd" appends="YES" id="Hlc-lY-XYH"/>
                                     <outletCollection property="gestureRecognizers" destination="SHa-oG-emZ" appends="YES" id="mxq-As-tzz"/>
                                 </connections>
                             </imageView>
@@ -345,7 +343,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gCR-il-fyS" kind="modal" animates="NO" id="fed-PO-ZSH"/>
+                                    <segue destination="gCR-il-fyS" kind="modal" identifier="" animates="NO" id="fed-PO-ZSH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -353,9 +351,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jm-14-OaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Gra-F9-RLS"/>
-                <swipeGestureRecognizer direction="right" id="FbC-uv-mpd"/>
-                <swipeGestureRecognizer direction="right" id="SHa-oG-emZ"/>
+                <swipeGestureRecognizer direction="right" id="SHa-oG-emZ">
+                    <connections>
+                        <action selector="onSwipe:" destination="syk-w3-5Uu" id="vMI-yU-dYV"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1361" y="3350"/>
         </scene>
@@ -643,16 +643,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ITt-Df-CCF">
-                                <rect key="frame" x="0.0" y="428" width="320" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KP2-OO-UUu" kind="push" identifier="signinSegue" id="run-MX-si3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6k4-Ik-Jq0">
                                 <rect key="frame" x="0.0" y="470" width="311" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -661,6 +651,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="smf-KX-FVl" kind="push" id="ijC-3v-1U2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ITt-Df-CCF">
+                                <rect key="frame" x="0.0" y="428" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KP2-OO-UUu" kind="push" identifier="signinSegue" id="run-MX-si3"/>
                                 </connections>
                             </button>
                         </subviews>
